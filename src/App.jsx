@@ -8,6 +8,7 @@ import Projects from "./components/sections/Projects";
 import Certifications from "./components/sections/Certifications";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
+import FloatingContact from "./components/ui/FloatingContact";
 import scrollToHash from "./utils/scroll";
 
 export default function App() {
@@ -38,6 +39,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <FloatingContact />
     </div>
   );
 }
