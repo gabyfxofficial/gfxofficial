@@ -18,10 +18,12 @@ const StyledButton = styled.button`
     var(--color-primary) 0%,
     var(--color-primary-light) 100%
   );
-  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+  background-size: 200% 100%;
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
 
   &:hover {
-    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.6);
+    background-position: 100% 0;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
     transform: translateY(-2px);
   }
 
