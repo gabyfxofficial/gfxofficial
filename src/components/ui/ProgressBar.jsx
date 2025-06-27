@@ -20,7 +20,7 @@ export default function ProgressBar({ percent = 0 }) {
     <div className="w-full h-2 bg-[var(--color-border)] rounded-full overflow-hidden">
       <div
         ref={barRef}
-        className="h-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-light)] shadow-inner transition-all duration-1000 ease-out"
+        className="h-full bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-light)] shadow-inner transition-all duration-1000 ease-out animate-pulseSlow"
         style={{ width: 0 }}
       />
     </div>

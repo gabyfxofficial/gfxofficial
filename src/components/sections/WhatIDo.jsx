@@ -56,7 +56,7 @@ export default function WhatIDo() {
   return (
     <section id="whatido" className="py-24 bg-[var(--color-bg)]">
       <div className="container mx-auto px-6 lg:px-0 text-center mb-12">
-        <h2 className="text-4xl font-bold text-[var(--color-text)] mb-4">
+        <h2 className="text-4xl font-bold text-[var(--color-text)] mb-4 font-poppins">
           What I Do
         </h2>
         <p className="text-[var(--color-text)]/70">
@@ -70,7 +70,7 @@ export default function WhatIDo() {
         {SERVICES.map(({ Icon, title, desc, points }) => (
           <Card key={title} className="space-y-4 text-left">
             <div className="p-3 bg-[var(--color-primary)]/20 rounded-full w-12 h-12 flex items-center justify-center">
-              <Icon size={24} className="text-[var(--color-primary)]" />
+              <Icon size={24} className="text-[var(--color-primary)] animate-pulseSlow" />
             </div>
             <h3 className="text-xl font-semibold text-[var(--color-text)]">
               {title}

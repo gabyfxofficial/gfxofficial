@@ -29,7 +29,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-24 bg-[var(--color-card-bg)]">
       <div className="container mx-auto px-6 lg:px-0 text-center mb-12">
-        <h2 className="text-4xl font-bold text-[var(--color-text)] mb-4">
+        <h2 className="text-4xl font-bold text-[var(--color-text)] mb-4 font-poppins">
           Technical Expertise
         </h2>
         <p className="text-[var(--color-text)]/70">
@@ -46,7 +46,7 @@ export default function Skills() {
               <div className="flex items-center space-x-4">
                 <Icon
                   size={32}
-                  className="text-[var(--color-primary)]"
+                  className="text-[var(--color-primary)] animate-pulseSlow"
                   title={description}
                 />
                 <div className="flex-1">

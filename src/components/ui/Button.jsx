@@ -15,8 +15,8 @@ const StyledButton = styled.button`
   color: var(--color-bg);
   background: linear-gradient(
     135deg,
-    var(--color-primary) 0%,
-    var(--color-primary-light) 100%
+    var(--color-primary-light) 0%,
+    var(--color-primary) 100%
   );
   background-size: 200% 100%;
   box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
@@ -24,7 +24,7 @@ const StyledButton = styled.button`
   &:hover {
     background-position: 100% 0;
     box-shadow: 0 10px 25px rgba(99, 102, 241, 0.5);
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.02);
   }
 
   &:active {
@@ -38,7 +38,8 @@ const StyledButton = styled.button`
       color: var(--color-primary);
       border: 2px solid var(--color-primary);
       box-shadow: none;
-    `}
+      animation: pulse-slow 2s infinite;
+      `}
 `;
 
 export default function Button({ children, variant, ...rest }) {

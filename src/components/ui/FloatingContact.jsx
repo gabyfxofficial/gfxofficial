@@ -9,7 +9,7 @@ export default function FloatingContact() {
       smooth
       offset={-70}
       duration={500}
-      className="fixed bottom-6 right-6 z-50 bg-[var(--color-primary)] text-white p-4 rounded-full shadow-lg hover:bg-[var(--color-primary-light)] transition-colors"
+      className="fixed bottom-6 right-6 z-50 bg-[var(--color-primary)] text-white p-4 rounded-full shadow-lg hover:bg-[var(--color-primary-light)] transition-colors animate-pulseSlow"
     >
       <FiMail size={24} />
     </ScrollLink>

@@ -12,6 +12,7 @@ export default function Tag({ children, className = "" }) {
         "text-[var(--color-primary)]",
         "transition-colors duration-200",
         "hover:bg-[var(--color-primary)]/10",
+        "font-poppins animate-pulseSlow",
         className
       )}
     >

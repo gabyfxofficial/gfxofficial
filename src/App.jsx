@@ -27,7 +27,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-[var(--color-bg)] relative">
+    <div className="flex flex-col min-h-screen bg-[var(--color-bg)] relative font-outfit">
       <div id="scroll-progress" ref={progressRef} />
       <Header />
       <main className="flex-grow">

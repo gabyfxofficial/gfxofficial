@@ -29,14 +29,14 @@ export default function Footer() {
             <FiMail size={24} />
           </a>
         </div>
-        <p className="text-xs text-[var(--color-text)]/70">
+        <p className="text-xs text-[var(--color-text)]/70 font-poppins">
           &copy; {new Date().getFullYear()} Gabriel. All rights reserved.
         </p>
         <a
           href="#about"
           className="flex items-center space-x-1 hover:text-[var(--color-primary)] transition"
         >
-          <FiChevronUp className="transform transition-transform hover:-translate-y-1" />
+          <FiChevronUp className="transform transition-transform hover:-translate-y-1 animate-pulseSlow" />
           <span className="text-sm">Top</span>
         </a>
       </div>

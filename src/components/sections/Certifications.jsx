@@ -28,7 +28,7 @@ export default function Certifications() {
   return (
     <section id="certifications" className="py-24 bg-[var(--color-card-bg)]">
       <div className="container mx-auto px-6 lg:px-0 text-center mb-12">
-        <h2 className="text-4xl font-bold text-[var(--color-text)] mb-4">
+        <h2 className="text-4xl font-bold text-[var(--color-text)] mb-4 font-poppins">
           Certifications
         </h2>
         <p className="text-[var(--color-text)]/70">
@@ -43,7 +43,7 @@ export default function Certifications() {
           certifications.map((cert) => (
             <Card
               key={cert.title}
-              className="flex flex-col items-center space-y-4 text-center"
+              className="flex flex-col items-center space-y-4 text-center animate-pulseSlow"
             >
               {cert.image && (
                 <img

@@ -33,7 +33,7 @@ export default function Hero() {
     >
       {/* TEXT – mutat de 3 ori mai mult spre dreapta pe desktop */}
       <div className="w-full lg:w-1/2 lg:pl-72">
-        <div className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left space-y-6">
+        <div className="max-w-xl mx-auto lg:mx-0 text-center lg:text-left space-y-6 font-outfit">
           <p className="uppercase text-[var(--color-primary)] font-semibold tracking-wide">
             Available for new projects
           </p>
@@ -43,7 +43,7 @@ export default function Hero() {
               Gabriel
             </span>
           </h1>
-          <p className="text-lg text-[var(--color-text)]">
+          <p className="text-lg text-[var(--color-text)] font-poppins">
             Full-Stack Developer crafting modern web applications with clean
             code and seamless performance.
           </p>
@@ -63,7 +63,7 @@ export default function Hero() {
 
       {/* IMAGE */}
       <div className="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0">
-        <div className="w-64 h-64 sm:w-80 sm:h-80 bg-[var(--color-card-bg)] rounded-3xl shadow-lg overflow-hidden">
+        <div className="w-64 h-64 sm:w-80 sm:h-80 bg-[var(--color-card-bg)] rounded-3xl shadow-lg overflow-hidden animate-pulseSlow">
           <img
             src="https://imgur.com/MDtgVlu.png"
             alt="Hero Illustration"
