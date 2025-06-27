@@ -1,5 +1,5 @@
 /* index.css */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,7 +19,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: "Poppins", "Inter", "Roboto", sans-serif;
+  font-family: "Figtree", "Poppins", "Inter", "Roboto", sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
 }
@@ -97,8 +97,12 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  height: 4px;
-  background: var(--color-primary);
+  height: 3px;
+  background: linear-gradient(
+    to right,
+    var(--color-primary-light),
+    var(--color-primary)
+  );
   width: 0%;
   z-index: 50;
   transition: width 0.2s ease;

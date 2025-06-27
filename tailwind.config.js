@@ -8,7 +8,15 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Poppins", "Inter", "Roboto", "ui-sans-serif", "system-ui"],
+        sans: [
+          "Figtree",
+          "Poppins",
+          "Inter",
+          "Roboto",
+          "ui-sans-serif",
+          "system-ui",
+        ],
+        figtree: ["Figtree", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
       },

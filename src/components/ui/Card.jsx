@@ -6,9 +6,9 @@ export default function Card({ children, className = "" }) {
   return (
     <div
       className={classNames(
-        "bg-[var(--color-card-bg)] border border-[var(--color-border)]",
-        "rounded-2xl shadow-sm p-6 transform transition-transform duration-300",
-        "hover:scale-[1.02] hover:shadow-md",
+        "bg-[var(--color-card-bg)]/60 backdrop-blur-md border border-[var(--color-border)]",
+        "rounded-3xl shadow-lg p-8 transform transition-transform duration-300",
+        "hover:scale-[1.02] hover:shadow-xl",
         className
       )}
     >
