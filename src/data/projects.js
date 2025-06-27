@@ -1,0 +1,36 @@
+// src/data/projects.js
+export const projects = [
+  {
+    title: "E-Commerce Platform",
+    desc: "Full-stack e-commerce solution with React, Node.js & PostgreSQL, including integrated payment flows.",
+    tags: ["React", "Node.js", "PostgreSQL", "Stripe", "TypeScript"],
+    image: "/assets/images/project-1.png",
+    status: "Live",
+    liveLink: "https://your-ecommerce-app.example.com",
+    repoLink: "https://github.com/username/ecommerce-platform",
+    date: "2024-11-15",
+    category: "Full-Stack",
+  },
+  {
+    title: "Real-time Chat App",
+    desc: "WebSocket-based chat with authentication, file sharing, and encrypted messaging.",
+    tags: ["Next.js", "Socket.io", "MongoDB", "JWT", "Tailwind CSS"],
+    image: "/assets/images/project-2.png",
+    status: "In Development",
+    liveLink: "",
+    repoLink: "https://github.com/username/real-time-chat",
+    date: "2025-02-01",
+    category: "Frontend",
+  },
+  {
+    title: "Analytics Dashboard",
+    desc: "Interactive dashboard for real-time data visualization using D3.js & FastAPI.",
+    tags: ["React", "D3.js", "Python", "FastAPI", "Docker"],
+    image: "/assets/images/project-3.png",
+    status: "Live",
+    liveLink: "https://analytics-dash.example.com",
+    repoLink: "https://github.com/username/analytics-dashboard",
+    date: "2024-08-20",
+    category: "Data Visualization",
+  },
+];
