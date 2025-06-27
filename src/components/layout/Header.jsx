@@ -27,6 +27,9 @@ export default function Header() {
 
   useEffect(() => {
     document.body.classList.toggle("overflow-hidden", mobileOpen);
+    const handleKey = (e) => e.key === "Escape" && setMobileOpen(false);
+    if (mobileOpen) document.addEventListener("keydown", handleKey);
+    return () => document.removeEventListener("keydown", handleKey);
   }, [mobileOpen]);
 
   const OFFSET = -70;
@@ -75,20 +78,26 @@ export default function Header() {
 
       {/* Mobile overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 bg-[var(--color-bg)] z-40 flex flex-col items-center pt-24">
-          {NAV_LINKS.map(({ id, label }) => (
-            <ScrollLink
-              key={id}
-              to={id}
-              smooth
-              offset={OFFSET}
-              duration={500}
-              onClick={() => setMobileOpen(false)}
-              className="w-full text-center py-4 text-xl border-b border-[var(--color-border)] text-[var(--color-text)] hover:bg-[var(--color-primary)]/20 transition"
-            >
-              {label}
-            </ScrollLink>
-          ))}
+        <div className="fixed inset-0 z-40 flex">
+          <div
+            className="absolute inset-0 bg-black/50"
+            onClick={() => setMobileOpen(false)}
+          />
+          <div className="ml-auto w-3/4 max-w-xs h-full bg-[var(--color-bg)] flex flex-col pt-24 shadow-xl">
+            {NAV_LINKS.map(({ id, label }) => (
+              <ScrollLink
+                key={id}
+                to={id}
+                smooth
+                offset={OFFSET}
+                duration={500}
+                onClick={() => setMobileOpen(false)}
+                className="w-full text-left px-6 py-4 text-lg border-b border-[var(--color-border)] text-[var(--color-text)] hover:bg-[var(--color-primary)]/20 transition"
+              >
+                {label}
+              </ScrollLink>
+            ))}
+          </div>
         </div>
       )}
     </>
