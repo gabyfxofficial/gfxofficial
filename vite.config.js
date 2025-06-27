@@ -5,6 +5,9 @@ import path from "path";
 export default defineConfig({
   base: "/gfxofficial/",
   plugins: [react()],
+  css: {
+    devSourcemap: true,
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
