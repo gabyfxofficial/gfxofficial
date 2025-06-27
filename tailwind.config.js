@@ -9,16 +9,13 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          "Figtree",
-          "Poppins",
+          "Space Grotesk",
           "Inter",
-          "Roboto",
           "ui-sans-serif",
           "system-ui",
         ],
-        figtree: ["Figtree", "sans-serif"],
-        poppins: ["Poppins", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
+        space: ["Space Grotesk", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       colors: {
         bg: "#0F1115",
@@ -26,9 +23,9 @@ export default {
         border: "#2A2E36",
         placeholder: "#9CA3AF",
         primary: {
-          DEFAULT: "#10B981",
-          light: "#34D399",
-          dark: "#059669",
+          DEFAULT: "#6366f1",
+          light: "#8b5cf6",
+          dark: "#4f46e5",
         },
         secondary: {
           DEFAULT: "#047857",
