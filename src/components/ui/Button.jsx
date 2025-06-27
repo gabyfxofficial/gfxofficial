@@ -2,62 +2,36 @@
 import React from "react";
 import styled from "styled-components";
 
-// exactly the same styles & keyframe effects you had before…
+// Redesigned button styles for a modern 2025 look
 const StyledButton = styled.button`
   font-size: 1rem;
-  padding: 0.7em 2.7em;
-  letter-spacing: 0.06em;
-  position: relative;
+  padding: 0.75em 2.5em;
+  letter-spacing: 0.05em;
   font-family: inherit;
-  border-radius: 0.6em;
-  overflow: hidden;
-  transition: all 0.3s;
-  line-height: 1.4em;
-  border: 2px solid var(--color-primary);
-  background: linear-gradient(
-    to right,
-    #10b9811a 1%,
-    transparent 40%,
-    transparent 60%,
-    #10b9811a 100%
-  );
-  color: var(--color-primary);
-  box-shadow: inset 0 0 10px rgba(16, 185, 129, 0.4),
-    0 0 9px 3px rgba(16, 185, 129, 0.1);
+  border-radius: 0.5em;
+  border: none;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 
   &:hover {
-    color: var(--color-primary-light);
-    box-shadow: inset 0 0 10px rgba(16, 185, 129, 0.6),
-      0 0 9px 3px rgba(16, 185, 129, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: -4em;
-    width: 4em;
-    height: 100%;
-    top: 0;
-    transition: transform 0.4s ease-in-out;
-    background: linear-gradient(
-      to right,
-      transparent 1%,
-      #10b9811a 40%,
-      #10b9811a 60%,
-      transparent 100%
-    );
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   }
 
-  &:hover::before {
-    transform: translateX(15em);
-  }
-
-  /* …and the exact same outline override, now keyed off $variant */
   ${(props) =>
     props.$variant === "outline" &&
     `
       background: transparent;
       color: var(--color-primary);
+      border: 2px solid var(--color-primary);
       box-shadow: none;
     `}
 `;

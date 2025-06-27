@@ -78,12 +78,12 @@ export default function Header() {
 
       {/* Mobile overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 flex">
+        <div className="fixed inset-0 z-40 flex fade-in">
           <div
             className="absolute inset-0 bg-black/50"
             onClick={() => setMobileOpen(false)}
           />
-          <div className="ml-auto w-3/4 max-w-xs h-full bg-[var(--color-bg)] flex flex-col pt-24 shadow-xl">
+          <div className="ml-auto w-3/4 max-w-xs h-full bg-[var(--color-bg)] flex flex-col pt-24 shadow-xl slide-in-right">
             {NAV_LINKS.map(({ id, label }) => (
               <ScrollLink
                 key={id}
