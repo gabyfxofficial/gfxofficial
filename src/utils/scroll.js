@@ -4,6 +4,9 @@ export default function scrollToHash() {
   if (window.location.hash) {
     const id = window.location.hash.substring(1);
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      window.scrollBy(0, -70);
+    }
   }
 }

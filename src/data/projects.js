@@ -33,4 +33,15 @@ export const projects = [
     date: "2024-08-20",
     category: "Data Visualization",
   },
+  {
+    title: "Portfolio 2025",
+    desc: "Modern portfolio site showcasing animations and the new design system.",
+    tags: ["React", "Tailwind CSS"],
+    image: "/assets/images/project-4.png",
+    status: "Live",
+    liveLink: "https://your-portfolio.example.com",
+    repoLink: "https://github.com/username/portfolio-2025",
+    date: "2025-06-01",
+    category: "Frontend",
+  },
 ];

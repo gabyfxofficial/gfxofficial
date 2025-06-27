@@ -28,6 +28,8 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+      // additional rule for 2025 refresh
+      'no-console': 'warn',
     },
   },
 ]

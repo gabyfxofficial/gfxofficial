@@ -9,13 +9,13 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          "Space Grotesk",
-          "Inter",
+          "Outfit",
+          "Poppins",
           "ui-sans-serif",
           "system-ui",
         ],
-        space: ["Space Grotesk", "sans-serif"],
-        inter: ["Inter", "sans-serif"],
+        outfit: ["Outfit", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         bg: "#0F1115",
@@ -33,6 +33,15 @@ export default {
           dark: "#064E3B",
         },
         text: "#E5E7EB",
+      },
+      keyframes: {
+        "pulse-slow": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.6" },
+        },
+      },
+      animation: {
+        pulseSlow: "pulse-slow 3s ease-in-out infinite",
       },
     },
   },

@@ -107,4 +107,11 @@ export const skills = [
     category: "Tooling",
     description: "Distributed version control system for code management.",
   },
+  {
+    name: "Figma",
+    level: 85,
+    Icon: FaReact, // placeholder icon
+    category: "Design",
+    description: "UI/UX design collaboration tool used for prototypes.",
+  },
 ];

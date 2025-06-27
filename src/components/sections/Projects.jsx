@@ -40,7 +40,7 @@ export default function Projects() {
     <section id="projects" className="py-24 bg-[var(--color-bg)]">
       {/* Header */}
       <div className="container mx-auto px-6 lg:px-0 text-center mb-12">
-        <h2 className="text-4xl lg:text-5xl font-bold text-[var(--color-text)] mb-4">
+        <h2 className="text-4xl lg:text-5xl font-bold text-[var(--color-text)] mb-4 font-poppins">
           Featured Projects
         </h2>
         <p className="text-[var(--color-text)]/70 mb-8 max-w-xl mx-auto">
@@ -73,7 +73,7 @@ export default function Projects() {
         className="container mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-6 lg:px-0"
       >
         {filtered.map((p) => (
-          <Card key={p.title} className="flex flex-col h-full overflow-hidden">
+          <Card key={p.title} className="flex flex-col h-full overflow-hidden animate-pulseSlow">
             {/* Content */}
             <div className="p-6 flex flex-col flex-1">
               <h3 className="text-2xl font-semibold text-[var(--color-text)] mb-3">

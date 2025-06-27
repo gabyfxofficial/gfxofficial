@@ -14,13 +14,13 @@ export default function Input({
     border border-[var(--color-border)]
     text-[var(--color-text)] placeholder-[var(--color-placeholder)]
     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-primary)]
-    transition-all duration-300
+    transition-all duration-300 font-poppins
     px-5 py-3
   `;
   return (
     <div className={classNames("mb-4", className)}>
       {label && (
-        <label className="block text-sm font-medium mb-1">{label}</label>
+        <label className="block text-sm font-medium mb-1 font-poppins animate-pulseSlow">{label}</label>
       )}
       {textarea ? (
         <textarea className={base + " resize-none min-h-[120px]"} {...props} />

@@ -38,16 +38,17 @@ export default function Header() {
     <>
       <header
         className={`
-          fixed w-full top-0 left-0 z-50 transition 
+          fixed w-full top-0 left-0 z-50 transition
           ${
             scrolled
               ? "backdrop-blur bg-[var(--color-card-bg)]/80 shadow-md"
               : "bg-transparent"
           }
+          animate-pulseSlow
         `}
       >
         <div className="container mx-auto flex items-center justify-between px-6 py-4">
-          <h1 className="text-2xl font-bold text-[var(--color-primary)]">
+          <h1 className="text-2xl font-bold font-poppins text-[var(--color-primary)]">
             Gabriel
           </h1>
           {/* Desktop nav */}

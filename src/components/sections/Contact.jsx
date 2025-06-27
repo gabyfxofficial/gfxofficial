@@ -22,7 +22,7 @@ export default function Contact() {
   return (
     <section id="contact" ref={ref} className="py-24 bg-[var(--color-bg)]">
       <div className="container mx-auto px-6 lg:px-0 text-center mb-12">
-        <h2 className="text-4xl font-bold text-[var(--color-text)] mb-4">
+        <h2 className="text-4xl font-bold text-[var(--color-text)] mb-4 font-poppins">
           Let’s Work Together
         </h2>
         <p className="text-[var(--color-text)]/70">
@@ -31,7 +31,7 @@ export default function Contact() {
       </div>
       <div className="container mx-auto grid gap-8 md:grid-cols-3 px-6 lg:px-0">
         <Card className="flex items-center space-x-4 p-6">
-          <FiMail size={24} className="text-[var(--color-primary)]" />
+          <FiMail size={24} className="text-[var(--color-primary)] animate-pulseSlow" />
           <div>
             <h4 className="font-semibold text-[var(--color-text)]">
               Email Address
@@ -40,7 +40,7 @@ export default function Contact() {
           </div>
         </Card>
         <Card className="flex items-center space-x-4 p-6">
-          <FiPhone size={24} className="text-[var(--color-primary)]" />
+          <FiPhone size={24} className="text-[var(--color-primary)] animate-pulseSlow" />
           <div>
             <h4 className="font-semibold text-[var(--color-text)]">
               Phone Number
@@ -49,7 +49,7 @@ export default function Contact() {
           </div>
         </Card>
         <Card className="flex items-center space-x-4 p-6">
-          <FiMapPin size={24} className="text-[var(--color-primary)]" />
+          <FiMapPin size={24} className="text-[var(--color-primary)] animate-pulseSlow" />
           <div>
             <h4 className="font-semibold text-[var(--color-text)]">Location</h4>
             <p className="text-[var(--color-text)]/70">Bucharest, Romania</p>
